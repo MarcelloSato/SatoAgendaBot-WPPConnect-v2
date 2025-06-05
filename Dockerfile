@@ -1,6 +1,8 @@
 FROM node:20-alpine
 
+# Instalar git + dependências de sistema para rodar o Chromium/puppeteer
 RUN apk add --no-cache \
+    git \
     chromium \
     nss \
     freetype \
