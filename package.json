@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "wppconnect": "*"
+    "wppconnect": "git+https://github.com/wppconnect-team/wppconnect.git"
   }
 }
