@@ -1,4 +1,3 @@
-
 {
   "name": "sato-agenda-bot-wppconnect",
   "version": "1.0.0",
@@ -11,4 +10,3 @@
     "wppconnect": "^3.0.4"
   }
 }
-
