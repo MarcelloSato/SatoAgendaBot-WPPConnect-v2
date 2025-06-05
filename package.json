@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "wppconnect": "^3.0.4"
+    "wppconnect": "*"
   }
 }
