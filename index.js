@@ -1,4 +1,3 @@
-
 const { create } = require('wppconnect');
 
 create().then((client) => {
