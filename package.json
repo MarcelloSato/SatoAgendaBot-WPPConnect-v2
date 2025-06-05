@@ -8,8 +8,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-  "@wppconnect-team/wppconnect": "^3.0.0"
-}
-
+    "wppconnect": "^3.0.4"
   }
 }
+

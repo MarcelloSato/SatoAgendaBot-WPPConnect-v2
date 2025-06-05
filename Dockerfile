@@ -1,21 +1,28 @@
-
 FROM node:20-alpine
 
-# System dependencies
-RUN apk add --no-cache   chromium   nss   freetype   harfbuzz   ca-certificates   ttf-freefont
+# Instalar dependências de sistema para rodar o Chromium/puppeteer dentro do Alpine
+RUN apk add --no-cache \
+    chromium \
+    nss \
+    freetype \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont
 
-# Working directory
+# Define o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copy and install dependencies
+# Copia somente package.json e, se houver, package-lock.json
 COPY package*.json ./
+
+# Executa npm install para instalar dependencies (agora 'wppconnect')
 RUN npm install
 
-# Copy application code
+# Copia o restante do código para /app
 COPY . .
 
-# Expose WPPConnect port
+# Expõe a porta que o WPPConnect irá usar (21465)
 EXPOSE 21465
 
-# Start command
+# Comando para iniciar o bot
 CMD ["npm", "start"]
