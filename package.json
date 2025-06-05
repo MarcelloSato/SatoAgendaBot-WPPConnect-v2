@@ -1,0 +1,15 @@
+
+{
+  "name": "sato-agenda-bot-wppconnect",
+  "version": "1.0.0",
+  "description": "Sato Agenda Bot - WPPConnect Railway Build",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+  "@wppconnect-team/wppconnect": "^3.0.0"
+}
+
+  }
+}
